@@ -7,7 +7,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-  <title>Document</title>
+  <title>Ex04</title>
 
   <link
     rel="stylesheet"
@@ -16,7 +16,152 @@
 </head>
 
 <body>
+  <h1>Welcome to our newsletter</h1>
+  <p>
+    <img
+      src="images/newsletter.jpg"
+      alt="newsletter"
+    >
+    <!-- numele imaginii newsletter este cu extensia .jpg cu litere mari dar pixellabul cere extensia cu litere mici..din cauza asta pe linux nu se afiseaza imaginea! -->
+  </p>
 
+  <p>
+    Subscribe <b>now</b> for our best offers!
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nobis architecto voluptatem commodi placeat ea
+    tempore! Quis omnis laudantium deleniti aliquid consequuntur, neque perspiciatis, dolore libero magnam saepe
+    doloremque tenetur.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, labore magni exercitationem impedit temporibus
+    veniam soluta, accusamus quis nulla error aspernatur. Repudiandae eveniet, amet magnam dolorem veritatis
+    perspiciatis ipsam doloremque!
+  </p>
+
+  <p>
+    <a
+      href="/"
+      title="Privacy"
+    >Privacy</a>
+    <a
+      href="/"
+      title="GDPR"
+    >GDPR</a>
+    <a
+      href="/"
+      title="Customer Service"
+    >Customer Service</a>
+    <a
+      href="/"
+      title="Contact"
+    >Contact</a>
+  </p>
+
+  <h2>Newsletter Form</h2>
+
+  <form>
+    <fieldset>
+      <legend>Subscribe:</legend>
+      <!--Dragos a sters for="" din labelul cu Title -->
+      <label>Title:</label>
+      <label for="male">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+      >
+      <label for="female">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="female"
+        value="female"
+      >
+      <label for="na">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="na"
+        value="na"
+      > <br>
+
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        name="name"
+        id='name'
+        placeholder="Name"
+        required
+      >
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Surname"
+        required
+      > <br>
+
+      <label for="email">*Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+      > <br><br>
+
+      <input
+        type="checkbox"
+        name="subscribe"
+        id="subscribe"
+      >
+      <label for="subscribe">
+        Agree to this and <i>we will send you emails</i>.
+      </label> <br>
+
+      <input
+        type="checkbox"
+        name="gdpr-consent"
+        id="gdpr-consent"
+      >
+      <label for="gdpr-consent">GDPR generic consent?</label>
+
+      <button
+        type="submit"
+        title="Subscribe"
+        id="submit"
+        name="submit"
+      >Subscribe</button>
+      <!-- de ce este necesar id in butonul submit? -->
+    </fieldset>
+  </form>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil, saepe distinctio fugiat esse consequatur minus
+    in perspiciatis, architecto, autem totam possimus quas quam nulla voluptatibus et officia amet explicabo!</p>
+
+  <p>
+    <a
+      href="/"
+      title="Privacy"
+    >Privacy</a>
+    <a
+      href="/"
+      title="GDPR"
+    >GDPR</a>
+    <a
+      href="/"
+      title="Customer Service"
+    >Customer Service</a>
+    <a
+      href="/"
+      title="Contact"
+    >Contact</a>
+  </p>
 
   <div
     class="pixeltab-host"
