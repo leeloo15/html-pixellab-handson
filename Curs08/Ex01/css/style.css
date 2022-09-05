@@ -1,0 +1,56 @@
+
+
+/*
+1. In director se afla un document cu o portiune de cod HTML cu un fisier de CSS legat.
+2. Coloreaza elemente h1 rosii si subliniaza-le
+3. Coloreaza paragrafele gri
+4. Coloreaza ancorele din listele ordonate verde si afiseaza-le taiate cu o linie albastra
+5. Adauga o umbra de 2px 2px 5px galbena pe elementele h2 si scoate stilul bold
+6. Adauga o umbra de 0 3px 5px verde pe elementele h3 si subliniaza-le cu o linie maro taiata (dotted)
+7. Subliniaza elementele li din listele neordonate si coloreaza textul mov
+8. Subliniaza elemente b din paragrafe si coloreaza-le galben
+9. Coloreaza elementele i din paragrafe albastru, afiseaza-le bold si taiate
+
+*/
+
+h1 {
+  color: red;
+  text-decoration: underline;
+}
+
+p {
+  color: grey;
+}
+
+ol a {
+  color: green;
+  text-decoration: line-through blue;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px yellow;
+  font-weight: normal;
+}
+
+h3 {
+  text-shadow: 0px 3px 5px green;
+  text-decoration: underline dotted brown;
+}
+
+ul li {
+  color: purple;
+  text-decoration: underline;
+}
+
+p b {
+color: yellow;
+text-decoration: underline;
+}
+
+p i {
+  color: blue;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+

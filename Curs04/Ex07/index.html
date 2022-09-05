@@ -19,30 +19,24 @@
 
   <p>
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Home"
     >Home</a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Place Order"
     ><b>Place Order</b></a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Customer Service"
     >Customer Service</a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Contact"
     >Contact</a>
   </p>
+
+  <!-- de modificat: trebuie href cu="/"" plus title si atat si jos-->
 
   <h1>Place Order</h1>
 
@@ -62,19 +56,15 @@
   <p>
     <img
       src="images/mouse.jpg"
-      alt="mouse"
+      alt="Mouse"
     >
 
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Sterge"
     >Sterge</a>
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Editeaza"
     >Editeaza</a>
   </p>
@@ -86,15 +76,11 @@
       alt="extension chord"
     >
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Sterge"
     >Sterge</a>
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Editeaza"
     >Editeaza</a>
   </p>
@@ -106,20 +92,15 @@
       alt="phone"
     >
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Sterge"
     >Sterge</a>
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Editeaza"
     >Editeaza</a>
   </p>
   <hr>
-
   <h2>Order Now</h2>
 
   <p>
@@ -207,20 +188,20 @@
     <fieldset>
       <legend>Address</legend>
 
-      <label for="name2">*Name:</label>
+      <label for="address-name">*Name:</label>
       <input
         type="text"
-        name="name2"
-        id="name2"
+        name="address-name"
+        id="address-name"
         placeholder="Name"
         required
       ><br><br>
 
-      <label for="surname2">*Surname:</label>
+      <label for="address-surname">*Surname:</label>
       <input
         type="text"
-        name="surname2"
-        id="surname2"
+        name="address-surname"
+        id="address-surname"
         placeholder="Surname"
         required
       ><br><br>
@@ -239,21 +220,25 @@
         type="text"
         name="address1"
         id="address1"
-        placeholder="Adress Line 1"
+        placeholder="Address Line 1"
         required
       ><br><br>
 
       <!-- pixellabul cere placeholder=Name, dar exercitiul prevede Adress Line 1, iar la adresa imi cere ba address1 ba adress-name, trebuie sa ma lamuresc-->
 
-      <label for="address-surname">*Address Line 2:</label>
+      <label for="address2">*Address Line 2:</label>
       <input
         type="text"
-        name="address-surname"
-        id="address-surname"
-        placeholder="Surname"
+        name="address2"
+        id="address2"
+        placeholder="Address Line 2"
         required
       ><br><br>
 
+      <!--
+Cerinta este: Documentul trebuie sa contina un element input de tip text cu valoarea "address2" pentru atributul name, cu valoarea "address2"
+pentru atributul id si cu valoarea "Address Line 2" pentru atributul placeholder.
+Nu am identificat un element input de tip text cu valoarea "address2" in atributul id. Te rog adauga-l in formular. -->
       <!-- iarasi sunt diferente intre cum arata exercitiul si cere pixellabul...adresa 2 nu ar trebui sa fie cu asterix ori required, dar pixellabul le cere;
         de asemenea, pixellabul cere Surname la placeholder, desi in exercitiu apare Adress Line 2 -->
 
@@ -294,6 +279,57 @@
 
       <!-- de introdus cod -->
 
+      <label for="card-number">*Card number</label>
+      <input
+        type="text"
+        name="card-number"
+        id="card-number"
+        placeholder="Card Number"
+        required
+      ><br><br>
+
+      <label for="card-name">*Name on card</label>
+      <input
+        type="text"
+        name="card-name"
+        id="card-name"
+        placeholder="Name on card"
+        required
+      ><br><br>
+
+      <label for="card-expiry-month">*Expiry Month</label>
+      <select
+        name="card-expiry-month"
+        id="card-expiry-month"
+        required
+      >
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+      </select>
+
+      <label for="card-expiry-year">*Expiry Year</label>
+      <select
+        name="card-expiry-year"
+        id="card-expiry-year"
+        required
+      >
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
+
+      <label for="card-cvv">*CVV</label>
+      <input
+        type="text"
+        name="card-cvv"
+        id="card-cvv"
+        placeholder="CVV"
+        required
+      >
+
 
     </fieldset>
 
@@ -309,8 +345,6 @@
       <label for="terms">*You are required to agree to the
         <a
           href="/"
-          target="_blank"
-          rel="noopener noreferrer"
           title="terms and conditions"
         >terms and conditions</a></label><br><br>
 
@@ -351,27 +385,19 @@
 
   <p>
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Home"
     >Home</a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Place Order"
     ><b>Place Order</b></a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Customer Service"
     >Customer Service</a> *
     <a
-      href="https://www.google.com/"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/"
       title="Contact"
     >Contact</a>
   </p>

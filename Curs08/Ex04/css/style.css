@@ -1,4 +1,62 @@
 .container {
-  border: 1px solid #000; 
+  border: 1px solid #000;
   padding: 5px;
+  position: relative;
+}
+
+/*
+1.Adauga o clasa numita nav-top pe elementul nav si pozitioneaza-l absolut,
+astfel incat sa fie in dreapta sus a ecranului, cu un fundal negru si text alb
+(ancorele trebuie stilate separat)
+2.In fiecare sectiune (apa, acid, ozon) preia intr-un element span cu clasa legend
+cuvantul dedicat fiecareia, pozitioneaza-l absolut fata de elementul container,
+adauga-i fundal alb si o bordura neagra si afiseaza-l pe bordura de sus a containerului
+(similar cu fieldset)
+3.Folosind elemente span pe care vei pune o clasa numita sub, proprietatea font-size
+si pozitionarea relativa, corecteaza formulele astfel incat acestea sa aibe indicii
+corecti (similar cu sub)
+4.Creeaza un element nav nou similar cu cel de sus, cu o clasa numita nav-bottom,
+si aplica-i un fundal verde. Folosind pozitionarea fixed, pozitioneaza-l in stanga jos,
+acesta trebuie sa fie mereu in ecran, indiferent de pozitia scrollbarului.
+5.Ajusteaza paddingul elementului body astfel incat elementele de navigatie sa
+nu incurce citirea
+*/
+
+.nav-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.nav-top a {
+  color: white;
+}
+
+.legend {
+  position: absolute;
+  top: -10px;
+  background-color: grey;
+  border: 1px solid red;
+}
+/* DRAGOS: cerinta 2 e diferita de ceea ce cere pixellabul!! */
+
+.sub {
+  font-size: 50%;
+  position: relative;
+  top: 3px;
+}
+
+.nav-bottom {
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-bottom a {
+  color: white;
 }

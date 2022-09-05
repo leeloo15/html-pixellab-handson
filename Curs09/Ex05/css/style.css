@@ -1,25 +1,72 @@
 .box {
-  width: 25px; 
-  height: 25px; 
+  width: 25px;
+  height: 25px;
   display: inline-block;
 }
 
+/*
+Folosind pseudo-clasa :hover, tranzitioneaza cutiile dupa cum urmeaza:
+2.Tranzitioneaza liniar lungimea cutiei rosii de la valoarea initiala
+la 120px pentru trei secunde */
+
 .box-red {
   background-color: red;
+  transition: width 3s linear;
 }
+
+.box-red:hover {
+  width: 120px;
+}
+
+/*3.Roteste cutia verde 360 de grade si scaleaz-o la 1.5  pentru
+5 secunde folosind tranzitie liniara
+Pixellab:Documentul trebuie sa contina o cutie verde care pe hover
+se roteste la 360 de grade si scaleaza la 1.5 peste 5 secunde.*/
 
 .box-green {
   background-color: green;
+  transition: transform 5s linear;
 }
+
+.box-green:hover{
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* 4.Tranzitioneaza lungimea si inaltimea cutiei mov pana la 100px
+peste 4 secunde cu functia ease si un delay de o secunda
+Documentul trebuie sa contina o cutie mov care tranzitioneaza la 100px inaltime
+si latime peste 4 secunde cu functia ease si un delay de 1s. */
 
 .box-purple {
   background-color: purple;
+  transition: width 4s ease 1s, height 4s ease 1s;
 }
+
+.box-purple:hover {
+width: 100px;
+height: 100px;
+}
+
+/* 5.Roteste cutia maro cu -180 de grade si scaleaz-o la 0.5
+pentru 4 secunde cu functia ease-in */
 
 .box-brown {
   background-color: brown;
+  transition: transform 4s ease-in;
 }
+
+.box-brown:hover {
+  transform: rotate(-180deg) scale(0.5);
+}
+
+/* 6.Tranzitioneaza cutia galbena cu transform scale(2)
+pe o perioada de 3 secunde cu functia ease-in-out */
 
 .box-yellow {
   background-color: yellow;
+  transition: transform 3s ease-in-out;
+}
+
+.box-yellow:hover {
+transform: scale(2);
 }

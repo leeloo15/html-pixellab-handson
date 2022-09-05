@@ -1,0 +1,66 @@
+a {
+  color: green;
+}
+
+i {
+  color: red;
+}
+
+.line {
+  text-decoration: underline;
+}
+
+/* Subliniaza si coloreaza negre ancorele la care atributul href contine .com */
+
+a[href$=".com"]
+{
+  text-decoration: underline;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+/* Coloreaza gri toate elementele cu clasa line care se afla in paragrafe */
+
+p .line {
+  color: grey;
+}
+
+b {
+  color: purple;
+}
+
+/* Coloreaza albastru elementele cu clasa
+line din elementele cu clasa odd
+ */
+
+.odd .line {
+  color: blue;
+}
+
+/* Subliniaza elementele i din elementele cu clasa odd */
+
+.odd i {
+  text-decoration: underline;
+}
+
+/* Subliniaza elementele b din elementele cu clasa even */
+
+.even b {
+  text-decoration: underline;
+}
+
+/* Coloreaza rosu toate ancorele care au atributul href incepand cu http:// */
+
+a[href^="http://"]
+{
+  color: red;
+}
+
+/* Subliniaza si coloreaza negre ancorele la care atributul href contine .com */
+
+a[href$=".com"]
+{
+  color: black;
+}

@@ -1,4 +1,59 @@
 .container {
-  border: 1px solid #000; 
+  border: 1px solid #000;
   padding: 5px;
+  position: relative;
+}
+
+/*
+1.Adauga o clasa numita nav-bottom pe elementul nav si pozitioneaza-l
+absolut, astfel incat sa fie in dreapta jos a ecranului, cu un
+fundal albastru si text maro (ancorele trebuie stilate separat)
+2.In fiecare sectiune (pitagora, cerc, patrate) preia intr-un element
+span cu clasa legend cuvantul dedicat fiecareia, pozitioneaza-l
+absolut fata de elementul container, adauga-i fundal gri si
+o bordura rosie si afiseaza-l pe bordura de sus a containerului
+(similar cu fieldset)
+3.Folosind elemente span pe care vei pune o clasa numita sup,
+proprietatea font-size si pozitionarea relativa, corecteaza formulele
+astfel incat acestea sa aibe indicii corecti (similar cu sup)
+4.Creeaza un element nav nou  similar cu cel de sus, cu o clasa
+numita nav-top, si aplica-i un fundal verde. Folosind pozitionarea
+fixed, pozitioneaza-l in stanga sus, acesta trebuie sa fie mereu in
+ecran, indiferent de pozitia scrollbarului.
+5.Ajusteaza paddingul elementului body astfel incat elementele de
+navigatie sa nu incurce citirea
+ */
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: green;
+  z-index: 1;
+}
+
+.nav-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  color: brown;
+  z-index: 1;
+}
+
+.nav-bottom a {
+  color: brown;
+}
+
+.legend {
+  position: absolute;
+  background-color: grey;
+  border: solid red;
+  top: -10px;
+}
+
+.sup {
+  position: relative;
+  font-size: 50%;
+  top: -3px;
 }

@@ -1,1 +1,107 @@
+/*1.Coloreaza mov elementele b care se afle in paragrafe (descendenta)*/
 
+p b {
+  color: purple;
+}
+
+/*2.Subliniaza elementele i care se afla in listele neordonate (descendenta)*/
+
+ul i {
+  text-decoration: underline;
+}
+
+/*3.Coloreaza elementele h2 care urmeaza imediat dupa h1 verzi (adiacenta) */
+
+h1 + h2 {
+  color: green;
+}
+
+/*4.Subliniaza cu o linie punctata rosie elementele h3 care urmeaza imediat
+dupa h2 si seteaza marginea de sus la 8px. Restul marginilor trebuie sa
+ramana la fel. (adiacenta)*/
+
+h2 + h3 {
+  text-decoration: underline dotted red;
+  margin-top: 8px;
+}
+
+/*5.Seteaza o bordura de 1px albastra si un padding de 5px in jurul
+elementelor h3 care urmeaza in document dupa un element ol
+(adiacenta generala)*/
+
+ol ~ h3 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+  /*6.Seteaza o bordura de 1 px punctata, neagra si un padding de 20px in
+  jurul elementelor p care urmeaza dupa ul (adiacenta generala)*/
+
+ul ~ p {
+  border: 1px solid black;
+  border-style: dotted;
+  padding: 20px;
+}
+
+/*7.Subliniaza elementele li de nivel doi al elementelor ul (descendenta directa)*/
+
+ul > li > ul > li {
+  text-decoration: underline;
+}
+
+/*9.Coloreaza albastru elementele i care se afle in paragrafe (descendenta)
+Obs: in curs sare de la Ex7 la Ex9*/
+
+p i {
+  color: blue;
+}
+
+/*10.Subliniaza elementele i care se afla in elementele cu clasa u-line (descendenta)*/
+
+.u-line i {
+  text-decoration: underline;
+}
+
+/*11.Elimina marginea de sus pentru paragrafele care se afla imediat dupa
+elemente h3 (adiacenta)*/
+
+h3 + p {
+  margin-top: 0px;
+}
+
+/*12.Subliniaza elementele h2 care urmeaza imediat dupa elemente ol (adiacenta)*/
+
+ol + h2 {
+  text-decoration: underline;
+}
+
+/*13.Adauga un padding orizontal de 12 si unul vertical de 10 elementelor p care
+urmeaza dupa elementul cu clasa random (adiacenta generala)
+-VLAD*/
+
+.random ~ p {
+  padding: 10px 12px;
+}
+
+/* 14.Coloreaza galben toate ancorele care se afla in listele neordonate ce
+urmeaza dupa elementul cu clasa last-list (adiacenta generala) */
+
+.last-list ~ ul a {
+color: yellow;
+}
+
+/* 15.Subliniaza elementele li care sunt descendenti directi ai listelor
+cu clasa my-list */
+
+.my-list > li {
+  text-decoration: underline;
+}
+
+/* Adauga un padding de 5px (display: inline-block) tuturor ancorelor
+(si doar lor) care se afla in elementele li din listele de nivel doi ale
+elementului cu clasa .nested */
+
+.nested ul > li > ul > li > a {
+  padding: 5px;
+  display: inline-block;
+}

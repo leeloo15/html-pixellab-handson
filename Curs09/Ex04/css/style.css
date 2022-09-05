@@ -4,23 +4,43 @@
   width: 25px;
 }
 
+/* 1.Folosind proprietatea
+transform si functia rotate, roteste cutia rosie cu -30  grade  */
+
 .box-red {
   background-color: red;
+  transform: rotate(-30deg);
 }
+
+/* 2.Folosind functia
+translate muta cutia verde cu 25px la dreapta si 100px in jos */
 
 .box-green {
   background-color: green;
+transform: translateX(25px) translateY(100px);
 }
+
+/* 3.Folosind ambele functii (rotate si translate)
+muta cutia mov cu 100px spre dreapta si roteste-o cu 50 de grade */
 
 .box-purple {
   background-color: purple;
+  transform: translateX(100px) rotate(50deg);
 }
+
+/* 4.Folosind metoda skew(10deg, 10 deg) intinde
+cutia maro apoi mut-o cu 5px in sus si 10px spre stanga */
 
 .box-brown {
   background-color: brown;
+  transform: skew(10deg, 10deg) translateY(-5px) translateX(-10px);
 }
+
+/* 5.Folosind metoda scale(1.2)
+mareste cutia galbena apoi roteste-o cu -15 grade */
 
 .box-yellow {
   background-color: yellow;
+  transform: scale(1.2) rotate(-15deg);
 }
 
