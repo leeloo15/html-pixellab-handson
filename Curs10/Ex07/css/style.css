@@ -1,0 +1,62 @@
+/* 1. Stileaza paragraful my-first-list astfel incat sa arate ca o lista neordonata,
+folosind ::before pentru puncte care sa arate ca romburi mov (folosind proprietatea
+transform cu functia rotate(45deg)) */
+
+.my-first-list a {
+  display: block;
+  margin: 8px 0;
+}
+
+.my-first-list a::before {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  content: '';
+  transform: rotate(45deg);
+  margin-right: 8px;
+}
+
+/* 2.Folosind ::after pentru aceleasi ancore, stileaza cercuri rosii */
+
+.my-first-list a::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: red;
+  /* daca vrem cercuri */
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+/*3. Stileaza paragraful my-second-list astfel incat sa arate ca o lista neordonata,
+folosind ::before pentru puncte care sa arate ca cercuri roz  */
+
+.my-second-list a {
+  display: block;
+}
+
+.my-second-list a::before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: pink;
+  margin-right: 8px;
+}
+
+/*4. Folosind ::after pentru aceste ancore, stileaza romburi albastre  */
+
+.my-second-list a:after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  transform: rotate(45deg);
+  margin-left: 8px;
+}
+
+

@@ -1,0 +1,79 @@
+/* 1. In documentul din director aplica pe ancorele din lista cu clasa
+.main o stare de hover in care linia dispare */
+
+.main a:hover {
+  text-decoration: none;
+}
+
+/* 2.Aplica pe fiecare a doua ancora din lista cu clasa
+.main o stare de hover in care culoarea se face rosie  */
+
+.main li:nth-of-type(2n) a:hover {
+  color: red;
+}
+
+/* 3.Aplica pe elementul h1 o stare de hover in care acesta este subliniat*/
+
+h1:hover {
+  text-decoration: underline;
+}
+
+/* 4.Aplica pe elementele i din paragrafe o stare de hover in care
+acestea sunt mutate cu 2px la dreapta si in sus atunci cand mouseul
+se afla oriunde pe paragraf */
+
+p:hover i {
+  top: -2px;
+  left: 2px;
+}
+p i {
+  position: relative;
+}
+
+
+/* 5.Aplica pe ancorele din lista cu clasa .secondary o stare de hover
+in care linia se muta deasupra  */
+
+.secondary a:hover {
+  text-decoration: overline;
+}
+
+/* 6.Aplica pe ancorele impare din lista cu clasa .main o stare de hover in
+care acestea sa se faca verzi iar linia sa dispara complet  */
+
+.main li:nth-of-type(2n+1) a:hover {
+  color: green;
+  text-decoration: none;
+}
+/* ar fi mai readable cu nth-child, daca se pune nth-of-type
+ai putea presupune faptul ca mai sunt si alte tipuri de elemente in .main */
+
+/* 7.Aplica pe elementele b din paragafe o stare de hover in care acestea
+devin rosii si se muta cu 2px in sus atunci cand mouseul se afla oriunde
+pe paragraf *
+
+DRAGOS: avand in vedere formularea problemei as fi rezolvat astfel:
+p b:hover {
+  color: red;
+}
+
+p:hover b {
+  top: -2px;
+}
+
+p b {
+  position: relative;
+}
+
+*/
+
+p:hover b {
+  color: red;
+  top: -2px;
+}
+
+p b {
+  position: relative;
+}
+
+

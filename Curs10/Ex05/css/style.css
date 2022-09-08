@@ -1,0 +1,110 @@
+/* 1. Elimina linia ancorelor primului element li de nivel 1 din clasa nested (:first-child)
+*/
+
+.nested > li:first-child a {
+  text-decoration: none;
+}
+
+/*2.Elimina linia ancorelor ultimului element li de nivel 2 din clasa nested (:last-child) */
+
+.nested > li > ul > li:last-child a {
+  text-decoration: none;
+}
+
+/* 3.Coloreaza fundalul galben pentru elemente li impare din elementul cu
+clasa last-list (:nth-child)  */
+
+.last-list li:nth-child(odd) {
+  background-color: yellow;
+}
+
+/*4.Coloreaza fundalul gri pentru al treilea element li de nivel 1 din
+elementele cu clasa my-list (:nth-child)  */
+
+.my-list > li:nth-child(3) {
+  background-color: gray;
+}
+
+/*5.Coloreaza verde fiecare al patrulea element h3 din document (:nth-of-type)  */
+
+body h3:nth-of-type(4) {
+  color: green;
+}
+
+/* teoretic ar trebui sa fie 4n, bug Pixellab */
+
+/* 6.Coloreaza albastru cu un fundal verde elementele impare de tip
+h2 din document (:nth-of-type)*/
+
+body h2:nth-of-type(2n+1) {
+  color: blue;
+  background-color: green;
+}
+
+/* se poate si cu (2n + 1) si cu (odd) */
+
+/* 7.Subliniaza primele elemente li din listele neordonate cu
+clasa u-line (si doar din listele neordonate)  (:first-child) */
+
+ul.u-line li:first-child {
+text-decoration: underline;
+}
+
+/* 8.Subliniaza ultimele elemente li din toate
+listele neordonate (:last-child) */
+
+ul li:last-child {
+  text-decoration: underline;
+}
+
+/* 9.Adauga o linie prin ancora celui de-al doilea element li
+din elementul cu clasa last-list (:nth-child)  */
+
+.last-list li:nth-child(2) a {
+  text-decoration: line-through;
+}
+
+
+/* 10.Coloreaza mov toate cuvintele “Dolor” si doar ele din document,
+fara a adauga clase in plus (:nth-child)  */
+
+ul li ul li:nth-child(3) {
+  color: purple;
+}
+
+/* 11.
+Cerinta conf curs: Aplica un fundal maro si un padding orizontal de 15px
+pe paragrafele impare (:nth-of-type)
+Cerinta conf Pixellab: documentul trebuie sa contina un fundal maro
+si un padding de 15px pe paragrafele impare (:nth-of-type)*/
+
+/* !DRAGOS: daca ar trebui sa respectam cerinta 11, din curs, atunci
+ar trebui sa trecem padding-left:15px si padding-right:15px; nu?
+Nu ar trebui scos cuvantul orizontal din enuntul prevazut in curs a.i.
+sa fie la fel cu cerinta Pixellab? */
+
+p:nth-of-type(odd) {
+  background-color: brown;
+  padding: 15px;
+}
+
+/* 12.Inconjoara cu o bordura neagra de 1px si un padding de 8px fiecare
+a 3-a lista neordonata de nivel superior din document. (:nth-of-type)
+
+!DRAGOS: mie mi se pare ca rezolvarea pentru enuntul problemei ar fi
+
+ul:nth-of-type(3n) {
+  border: 1px solid black;
+  padding: 8px;
+}
+si nu rezolvarea pe care o cere Pixellab cu body > ul > li:nth-of-type(3n)
+Gresesc eu ori enuntul problemei nu e formulat corect?*/
+
+body > ul > li:nth-of-type(3n) {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+
+
+
