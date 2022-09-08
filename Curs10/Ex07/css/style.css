@@ -46,6 +46,7 @@ folosind ::before pentru puncte care sa arate ca cercuri roz  */
   background-color: pink;
   margin-right: 8px;
 }
+/* se poate folosi si position:absolute in loc de display:inline-block */
 
 /*4. Folosind ::after pentru aceste ancore, stileaza romburi albastre  */
 
