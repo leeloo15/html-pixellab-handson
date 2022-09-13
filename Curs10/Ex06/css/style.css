@@ -67,13 +67,15 @@ p b {
 
 */
 
+p b {
+  position: relative;
+}
+
 p:hover b {
   color: red;
   top: -2px;
 }
 
-p b {
-  position: relative;
-}
+
 
 
