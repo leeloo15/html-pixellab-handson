@@ -20,7 +20,7 @@
     referrerpolicy="no-referrer"
   >
 
-  <link
+  <!-- <link
     href="fonts/playfair/stylesheet.css"
     rel="stylesheet"
   >
@@ -28,7 +28,8 @@
   <link
     href="fonts/roboto/stylesheet.css"
     rel="stylesheet"
-  >
+  > -->
+  <!-- se pot introduce fonturile si cu linkuri in html -->
 
   <link
     rel="stylesheet"
@@ -56,22 +57,953 @@ nu este obligatoriu sa fie organizate pozele per foldere, dar recomand
 PUTERNIC organizarea din thread affair, cu imagini generice direct in images cu
 pozele de produse in products si bannere
 
-More hints to come :D -->
+Pasi de urmat pentru playfair
+font - doar playfair display - de pe google
+download family
+transfonter
+download transfonter archive
+decompress in /fonts
+mutat declaratiile de CSS din arhiva
+in proiect (css/style.css)
+CHANGE PATHS din url(font-name)
+../fonts/font-name/woff
+
+hints part 2
+nu folosim niciodata cuvinte din design in codul nostru -->
 
 <body>
 
 
   <header class="header">
+    <section class="header-secondary">
+      <div class="header-connect">
+        <ul>
+          <li>
+            <a
+              href="http://youtube.com/c/monochrome/community"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Connect with Monochrome on Youtube"
+            ><i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <!-- Dragos:am pus ok titlul?? -->
+          <li>
+            <a
+              href="http://facebook.com/monochrome"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Connect with Monochrome on Facebook"
+            ><i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://twitter.com/monochrome"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Connect with Monochrome on Twitter"
+            ><i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="http://instagram.com/monochrome"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Connect with Monochrome on Instagram"
+            ><i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+44 (0)10 2345 6789">
+              Call us +44 (0)10 2345 6789
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- ./header-connect -->
+
+      <div class="header-controls">
+
+        <ul>
+
+          <li>
+            <input
+              class="site-search"
+              type="search"
+              name="q"
+              placeholder="Search"
+            ><i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+
+          <!-- trebuie sa ma gandesc cum sa fac search cu tot cu lupa inaintru-->
+
+          <li class="user-controls">
+            <a
+              href=""
+              title="My account"
+            ><i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+
+          <li class="favourites-controls">
+            <a
+              href=""
+              title="Favourites"
+            ><i class="fa-solid fa-heart"></i>
+            </a>
+          </li>
+
+          <li class="cart-controls">
+            <a
+              href=""
+              title="Cart"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- ./header-controls -->
+
+    </section>
+    <!-- ./header-secondary -->
+
+    <section class="header-primary">
+      <nav class="nav-primary">
+        <ul>
+          <li>
+            <a
+              href=""
+              title="New Arrivals"
+            >New Arrivals</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="Brands"
+            >Brands</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="Men's"
+            >Men's</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="Women's"
+            >Women's</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="Accesories"
+            >Accesories</a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              title="Lookbook"
+            >Lookbook</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ./nav-primary -->
+    </section>
+    <!-- header-primary -->
 
   </header>
   <!-- ./header -->
 
   <main class="content">
+    <!--Dragos: nu-mi dau seama, din monochrome indicii, de ce trebuie container la prima sectiune dar nu si la a doua
+    inca nu am pus nimic..astept sa ma lamuresti un pic -->
+    <section class="home-catalog-preview">
+      <header>
+        <h1>New Stuff</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/new_stuff_1.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/new_stuff_2.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/new_stuff_3.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/new_stuff_4.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+    <!-- ./home-catalog-preview -->
+
+    <section class="home-catalog-preview">
+      <header>
+        <h1>Most loved</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/most_loved_1.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/most_loved_2.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/most_loved_3.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/most_loved_4.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+    <!-- ./home-catalog-preview -->
+
+    <div class="home-content">
+      <aside>
+        <img
+          src="images/oliver-pecker-HONJP8DyiSM-unsplash.png"
+          alt=""
+        >
+      </aside>
+      <!-- Dragos:nu-mi dau seama daca ar trebui sa pun o clasa pe aside
+          sau o sa fie suficient, in css, sa utilizez css combinators; ar fi mai simplu
+          sa pun o clasa si pe aside? -->
+      <section class="home-content-message-to-buyer">
+        <h1>Watches for entrepreneurs</h1>
+        <p>
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
+        </p>
+
+        <p>
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
+        </p>
+      </section>
+    </div>
+    <!-- ./home-content -->
+
+    <section class="home-catalog-preview">
+      <header>
+        <h1>Men's</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/men_1.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/men_2.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/men_3.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/men_4.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+      </ul>
+
+      <footer class="product-tile-ctas">
+        <a
+          href=""
+          title="view all"
+        >
+          view all
+        </a>
+        <!--Dragos: eu as si pus button, dar in indiciile monochrome e mentionat ca ancora-->
+      </footer>
+      <!-- ./product-tile-ctas -->
+    </section>
+    <!-- ./home-catalog-preview -->
+
+    <section class="home-catalog-preview">
+      <header>
+        <h1>Women's</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/women_1.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/women_2.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/women_3.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-tile">
+
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="images/watches/women_4.png"
+                    alt="Monochrome"
+                  >
+                </a>
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h1 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h1>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span class="product-tile-price">$425</span>
+            </section>
+          </article>
+        </li>
+      </ul>
+
+      <footer class="product-tile-ctas">
+        <a
+          href=""
+          title="view all"
+        >
+          view all
+        </a>
+        <!--Dragos: eu as fi pus button, dar in indiciile monochrome e mentionat ca ancora-->
+      </footer>
+      <!-- ./product-tile-ctas -->
+    </section>
+    <!-- ./home-catalog-preview -->
 
   </main>
-  <!-- ./main -->
+  <!-- ./content -->
 
   <footer class="footer">
+    <section class="footer-contact">
+      <ul>
+        <li>
+          <a
+            href="tel:+44 (0)10 2345 6789"
+            title="Call us"
+          > call us <br> +44 (0)10 2345 6789
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:monochrome@yahoo.com"
+            title="Email us"
+          >email customer care
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- ./footer-contact -->
+
+    <nav class="footer-nav">
+      <ul>
+        <li>
+          <a
+            href=""
+            title="style & fit advice"
+          >style & fit advice
+          </a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="faqs"
+          >faqs</a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="delivery"
+          >delivery</a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="exchanges & returns"
+          >exchanges & returns</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a
+            href=""
+            title="about us"
+          >about us</a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="careers"
+          >careers</a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="affiliates"
+          >affiliates</a>
+        </li>
+
+        <li>
+          <a
+            href=""
+            title="advertising"
+          >advertising</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ./footer-nav -->
+
+    <section class="footer-connect">
+      <form
+        action="/"
+        class="footer-newsletter"
+      >
+        <label for="email">
+          sign up for our newsletter
+        </label><br>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+        ><br>
+
+        <input
+          type="checkbox"
+          name="gdpr-consent"
+          id="gdpr-consent"
+        >
+        <label for="gdpr-consent">
+          I agree with <a
+            href=""
+            title="gdpr-consent"
+          >Privacy Policy</a>
+          and i want to receive emails from Monochrome
+        </label><br>
+
+        <button type="submit">submit</button>
+
+      </form>
+      <!-- ./footer-newsletter -->
+
+    </section>
+    <!-- ./footer-connect -->
+
+    <section class="footer-social">
+      <a
+        href="http://youtube.com/c/monochrome"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Monochrome on Youtube"
+      ><i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a
+        href="http://facebook.com/monochrome"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Monochrome on Facebook"
+      ><i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a
+        href="http://twitter.com/monochrome"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Monochrome on Twitter"
+      ><i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a
+        href="http://instagram.com/monochrome"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Monochrome on Instagram"
+      ><i class="fa-brands fa-instagram"></i>
+      </a>
+    </section>
+    <!-- ./footer-social -->
 
   </footer>
   <!-- ./footer -->
