@@ -216,7 +216,7 @@
 }
 /* fonts - pot sterge Julius */
 
-
+/* add reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -270,6 +270,7 @@ table {
 body {
   font-family: 'Roboto', sans-serif;
   color: #707070;
+  font-size: 16px;
 }
 
 a {
@@ -277,6 +278,506 @@ a {
   text-decoration: none;
 }
 
-/* add reset */
 /* add custom resets box-sizing anchors ul li */
 
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* header */
+.header {
+  margin: 30px auto;
+}
+
+.header-secondary .header-support {
+  float: left;
+}
+
+.header-secondary .header-support li {
+  display: inline-block;
+}
+
+.header-secondary .header-support li:first-child {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #707070;
+}
+
+.header-secondary .header-support li:first-child i[class*='fa-'] {
+  color: #ff6b6b;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.header-secondary .header-controls {
+  float: right;
+}
+
+.header-secondary .header-controls > ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-secondary .header-controls li {
+  display: inline-block;
+}
+
+.header-secondary .header-controls li:nth-child(1) a {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-secondary .header-controls .user-controls .icon {
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.header-secondary .header-controls li:last-child a {
+  font-size: 28px;
+  position: relative;
+}
+
+.header-secondary .header-controls .cart-controls .qty {
+  background-color: #ff6b6b;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  padding: 0 6px;
+}
+
+.header-secondary .header-logo {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.header-primary {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* ma uit in roboto light si acolo se vede ca font weight e de 300 */
+
+.nav-primary {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.nav-primary li {
+  display: inline-block;
+}
+
+.nav-primary a {
+  padding: 6px 14px;
+  margin: 0 8px;
+  border-radius: 20px;
+  transition: background-color 0.4s linear, color 0.4s linear;
+}
+
+.nav-primary a:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.nav-secondary {
+  text-align: center;
+}
+
+.nav-secondary li {
+  display: inline;
+  margin: 0 8px;
+}
+
+.nav-secondary a {
+  transition: color 0.4s linear;
+}
+
+.nav-secondary a:hover {
+  color: #ff6b6b;
+}
+/* header */
+
+
+/* footer */
+.footer-primary {
+  background: #1B1927 url('./../images/banners/banner-06.jpg') no-repeat 120% center;
+  padding: 50px 50px 035px 50px;
+  /* mostenite */
+  font-size: 14px;
+  font-weight: 300;
+  color: #aeaeae;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/* am inlocuit right cu 120% */
+/* merge si ../ */
+
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-nav ul {
+  display: inline-block;
+  margin-left: 60px;
+  vertical-align: top;
+}
+
+.footer-nav ul:first-child {
+  margin-left: 0;
+}
+
+.footer-support {
+  display: inline-block;
+}
+
+.footer-support li {
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-support li:nth-child(2) {
+  margin: 0 16px;
+}
+
+.footer-support i[class*="fa-"] {
+  color: #ff6b6b;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-contact {
+  display: inline-block;
+  margin-left: 160px;
+}
+
+.footer-contact h1 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  /* nu impingem cu padding */
+}
+
+.footer-contact h1 span {
+  font-weight: 500;
+  /* fw 500 din roboto medium */
+}
+
+.footer-contact p {
+  text-transform: initial;
+}
+
+.footer-contact a[href^='tel:'] {
+  display: block;
+}
+
+.footer-contact a[href^='mailto:'] {
+  color: #ff6b6b;
+}
+
+.footer-secondary {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin: 22px 0;
+}
+
+.footer-secondary p {
+  margin-bottom: 4px;
+}
+
+.footer-secondary p img {
+  vertical-align: sub;
+}
+/* footer */
+
+
+/* homepage */
+.content-main > section {
+  margin-bottom: 98px;
+}
+
+.content-main > section > header{
+margin-bottom: 50px;
+
+}
+
+.content-main > section > header h1 {
+  font-size: 41px;
+  line-height: 59px;
+  text-align: center;
+  color: #292929;
+  font-weight: 300;
+}
+/* nu vrem sa avem mai mult de 4 selectori */
+.content-main > section > header h1 span {
+  font-weight: 500;
+}
+
+.content-main > section > header p {
+  text-align: center;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.banner-main  {
+  background: #1B1927 url('./../images/banners/banner-01.jpg') center center / cover no-repeat;
+  height: 527px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 96px;
+}
+
+/* bg pus in caz ca nu se incarca imaginea, fiindca textul e alb */
+
+.banner-main .banner-main-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: inherit;
+  padding-left: 75px;
+  position: relative;
+}
+
+.banner-main .banner-main-inner > div {
+  text-align: center;
+}
+
+.banner-main .banner-title {
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.banner-main .banner-subtitle {
+  font-size: 42px;
+  font-weight: 300;
+  margin: 16px 0 36px 0;
+}
+
+.banner-main .banner-cta {
+  display: inline-block;
+  text-align: center;
+  padding:  27px 40px;
+  font-weight: 400;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 1px solid #ff6b6b;
+  border-radius: 40px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.banner-main .banner-cta:hover {
+  color: #fff;
+  background-color:   #ff6b6b;
+}
+
+.banner-main .banner-copy {
+  position: absolute;
+  bottom: 40px;
+  left: 75px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.home-catalog-preview ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-catalog-preview ul li {
+  width: 27.386541%;
+}
+/* 350x100/1278= 27.386541*/
+
+.home-catalog-preview .product-tile {
+  width: 100%;
+}
+
+.home-catalog-preview .home-catalog-ctas {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.home-catalog-preview .home-catalog-ctas a {
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-catalog-preview .home-catalog-ctas a::after,
+.home-catalog-preview .home-catalog-ctas a::before {
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background-color: #ff6b6b;
+  content: '';
+  transition: width 0.4s linear;
+}
+/* fara content cu '' nu apare before si after */
+
+.home-catalog-preview .home-catalog-ctas a:hover::after,
+.home-catalog-preview .home-catalog-ctas a:hover::before {
+  width: 72px;
+}
+
+.product-tile {
+  font-size: 24px;
+  text-align: center;
+}
+
+.product-tile .product-tile-image {
+  position: relative;
+}
+/* facut relative pt absolutul lui badge, de mai jos */
+
+.product-tile .product-tile-image a {
+display: block;
+}
+
+.product-tile .product-tile-image img {
+  width: 100%;
+}
+
+.product-tile .product-tile-image .product-tile-badge {
+  color: #ff6b6b;
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.product-tile .product-tile-title {
+  font-weight: 300;
+  margin: 18px 0 12px 0;
+}
+
+.product-tile .product-tile-title span:first-child {
+  color: #000;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-title :nth-child(2) {
+  font-weight: 500;
+}
+
+.product-tile .product-tile-subtitle {
+  font-weight: 300;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.product-tile .product-tile-pricing {
+  margin: 16px 0;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-pricing .product-tile-regular-price {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.product-tile .product-tile-pricing .product-tile-price span {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-a2c {
+  background: none;
+  border: 0;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 1px solid #ff6b6b;
+  padding: 12px 24px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: color 0.4s linear, background-color 0.4s linear;
+  font-weight: 400;
+}
+
+.product-tile .product-tile-a2c:hover {
+  color: #fff;
+  background-color: #ff6b6b ;
+}
+
+.home-cta a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 236px;
+  background: #1B1927 url('../images/banners/banner-04.jpg') center center /
+  cover no-repeat;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 50px;
+  text-align: right;
+}
+/* vezi mdn background size, mult de citit */
+
+.home-cta a > span {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.home-cta a > span span {
+font-weight: 500;
+}
+
+.home-social ul {
+  text-align: center;
+}
+
+.home-social li {
+  display: inline-block;
+  margin:  0 4px;
+}
+
+
+.home-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 64px;
+  border: 3px solid #707070;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.home-payment ul {
+text-align: center;
+width: 320px;
+margin: 0 auto;
+}
+
+.home-payment li {
+display: inline-block;
+margin: 2px;
+}
+
+/* homepage */

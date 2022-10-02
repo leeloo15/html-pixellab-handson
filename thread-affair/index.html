@@ -29,7 +29,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header container">
     <section class="header-secondary">
       <div class="header-support">
         <ul>
@@ -68,7 +68,7 @@
                 alt="user Avatar"
               >
 
-              <i class="fa-solid fa-angle-down"></i>
+              <i class="fa-solid fa-angle-down icon"></i>
             </a>
           </li>
 
@@ -83,7 +83,8 @@
           </li>
         </ul>
         <!-- Dragos: la header-support a fost suficienta clasa din div,
-insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la header-support? -->
+insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la header-support?
+Raspuns: toate au nevoie, da; vom vedea in timp si apoi mai bagi o incercare-->
 
       </div>
       <!-- .header-controls -->
@@ -179,23 +180,29 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
 
   <main class="content">
     <header class="banner-main">
-      <h1 class="banner-title">Custom Suits</h1>
-      <h2 class="banner-subtitles">Get back to work in style</h2>
+      <div class=" banner-main-inner container">
+        <div>
+          <h1 class="banner-title">Custom Suits</h1>
+          <h2 class="banner-subtitle">Get back to work in style</h2>
 
-      <a
-        href=""
-        title="Create your suit"
-        class="banner-cta"
-      >Create your suit</a>
+          <a
+            href=""
+            title="Create your suit"
+            class="banner-cta"
+          >Create your suit</a>
+        </div>
 
-      <p class="banner-copy">
-        A Tailored Suit that will fit you perfectly is a dream for everybody. <br> We provide you with the design and
-        you
-        choose if you like it or if you want to change the details with our online configurator.
-      </p>
+        <p class="banner-copy">
+          A Tailored Suit that will fit you perfectly is a dream for everybody. <br> We provide you with the design
+          and
+          you
+          choose if you like it or if you want to change the details with our online configurator.
+        </p>
+
+      </div>
     </header>
 
-    <div class="content-main">
+    <div class="content-main container">
       <section class="home-catalog-preview">
         <header>
           <h1>All time <span>bestsellers</span></h1>
@@ -210,8 +217,9 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
         <ul class="product-tiles">
           <li>
             <article class="product-tile">
-              <!-- DRAGOS: de ce mai am nevoie si de article, nu e suficient li-ul...e doar o
-                chestie de semantica...fiindca lista contine un articol?-->
+              <!-- de ce mai am nevoie si de article, nu e suficient li-ul...e doar o
+                chestie de semantica...fiindca lista contine un articol?
+              Raspuns Dragos:corect, e o lista de articole, asa cum avem si liste de ancore-->
               <header>
                 <div class="product-tile-image">
                   <a
@@ -415,7 +423,7 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
 
       <section class="home-catalog-preview">
         <header>
-          <h1>New<span>collection</span></h1>
+          <h1>New <span>collection</span></h1>
 
           <p>Accomplish new achievements with a bold new style from the brilliant collection of men's designer suits.
             <br>
@@ -633,12 +641,12 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
           href=""
           title=""
         >
-          Want to buy a gift for someone?
+          Want to buy <br> a gift for someone?
           <span>
             <span>Press</span>
             here
             <span>for</span>
-            free guidance.
+            free guidance
           </span>
           <!-- de preferat cu clase, dar noi o sa folosim first child etc a.i. sa repetam materia -->
         </a>
@@ -647,7 +655,7 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
 
       <section class="home-social">
         <header>
-          <h1>We are <span>social</span>!</h1>
+          <h1>We are <span>social!</span></h1>
         </header>
 
         <ul>
@@ -781,7 +789,7 @@ insa la header-controls s-au pus clase si pe li-uri, de ce nu s-au pus si la hea
   </main>
   <!-- ./content -->
 
-  <footer class="footer">
+  <footer class="footer container">
     <section class="footer-primary">
       <nav class="footer-nav">
         <ul>
